@@ -11,15 +11,15 @@ Hopfield神经网络主要有两个应用：一是储存器，当我们把多个
 $$V_{x i}(t)=\frac{1}{2}\left(1+\tanh \left(\frac{U_{x i}(t)}{U_0}\right)\right)$$
 
 3.计算dU/dt
+
 $$ \frac{d U_{x i}}{d t}=-A\left(\sum_{j=1}^n V_{x, j}-1\right)-A\left(\sum_{y=1}^n V_{y, i}-1\right)-D\left(\sum_{y=1}^n d_{x y} V_{y, i+1}\right)$$
 
 4.计算U(t+1)
-$$U_{x, i}(t+1)=U_{x, i}(t)+\frac{d U_{x, i}}{d t} \Delta t$$
+$$ U_{x, i}(t+1)=U_{x, i}(t)+\frac{d U_{x, i}}{d t} \Delta t $$
 
 5.计算能量
-$$
-E=\frac{A}{2} \sum_{x=1}^n\left(\sum_{i=1}^n V_{x, i}-1\right)^2+\frac{A}{2} \sum_{i=1}^n\left(\sum_{x=1}^n V_{x, i}-1\right)^2+\frac{D}{2} \sum_{x=1}^n \sum_{y=1}^n \sum_{i=1}^n V_{x, i} d_{x, y} V_{x, i} V_{y, i+1}
-$$
+
+$$ E=\frac{A}{2} \sum_{x=1}^n\left(\sum_{i=1}^n V_{x, i}-1\right)^2+\frac{A}{2} \sum_{i=1}^n\left(\sum_{x=1}^n V_{x, i}-1\right)^2+\frac{D}{2} \sum_{x=1}^n \sum_{y=1}^n \sum_{i=1}^n V_{x, i} d_{x, y} V_{x, i} V_{y, i+1} $$
 
 6.转到步骤2重复迭代，得到最终的换位矩阵V
 
