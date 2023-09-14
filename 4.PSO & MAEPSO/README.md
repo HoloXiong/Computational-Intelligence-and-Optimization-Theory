@@ -43,26 +43,26 @@ $$\sigma_i^{(k)}=\left|W / 4-\sigma_i^{(k)}\right| $$
 
 （9）粒子群进化，搜索最优
 ## 结果测试
-- Tablet函数
+Tablet函数：
 
 ![Tablet0.png](../imgs/Tablet0.png)
 
-- Quadric函数
+Quadric函数：
 ![Quadric0.png](../imgs/Quadric0.png)
 
-- Rosenbrock函数
+Rosenbrock函数：
 
 ![Rosenbrock0.png](../imgs/Rosenbrock0.png)
 
-- Griewank函数
+Griewank函数：
 
 ![Griewank0.png](../imgs/Griewank0.png)
 
-- Rastrigin函数
+Rastrigin函数：
 
 ![Rastrigin0.png](../imgs/Rastrigin0.png)
 
-- SchafferF7函数 
+SchafferF7函数： 
 
 ![SchafferF70.png](../imgs/SchafferF70.png)
 
