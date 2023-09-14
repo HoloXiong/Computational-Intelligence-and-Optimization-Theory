@@ -15,7 +15,7 @@ $$V_{x i}(t)=\frac{1}{2}\left(1+\tanh \left(\frac{U_{x i}(t)}{U_0}\right)\right)
 $$ \frac{d U_{x i}}{d t}=-A\left(\sum_{j=1}^n V_{x, j}-1\right)-A\left(\sum_{y=1}^n V_{y, i}-1\right)-D\left(\sum_{y=1}^n d_{x y} V_{y, i+1}\right)$$
 
 4.计算U(t+1)
-$$ U_{x, i}(t+1)=U_{x, i}(t)+\frac{d U_{x, i}}{d t} \Delta t $$
+$$ U_{x, i}(t+1)=U_{x, i}(t)+ \frac{d U_{x, i}}{d t} \Delta t $$
 
 5.计算能量
 
