@@ -26,11 +26,14 @@ $$w=w_{max}-(w_{max}-w_{min})*gene/generation$$
 （4）每完成一次逃逸运动，该位置的逃逸次数自增，然后更新粒子位置，更新个体和全局最优位置。
 
 （5）多尺度算子的更新，将种群中的所有个体划分为M个，子群粒子个数为P=N/M，其中N为种群大小。然后计算每个子群的平均适应度，更新每个变异算子的标准差，第m个变异算子的标准差为：
-$$\begin{gathered}
-\sigma_m^{(K-1)} \exp \left(\frac{M \cdot F i t X_m^{(K)}-\sum_{m=1}^M F i t X_m^{(K)}}{F i t X_{\max }-F i t X_{\min }}\right) \\
-\text { Fit } X_{\max }=\max \left(F i t X_1^{(K)}, F i t X_2^{(K)}, \ldots, F i t X_M^{(K)}\right) \\
-F i t X_{\min }=\min \left(F i t X_1^{(K)}, F i t X_2^{(K)}, \ldots, F i t X_M^{(K)}\right)
-\end{gathered}$$
+
+$$\sigma_m^{(K-1)} \exp \left(\frac{M \cdot F i t X_m^{(K)}-\sum_{m=1}^M F i t X_m^{(K)}}{F i t X_{\max }-F i t X_{\min }}\right)$$
+
+其中：
+$${ Fit } X_{\max }=\max \left(F i t X_1^{(K)}, F i t X_2^{(K)}, \ldots, F i t X_M^{(K)}\right)$$
+
+$$F i t X_{\min }=\min \left(F i t X_1^{(K)}, F i t X_2^{(K)}, \ldots, F i t X_M^{(K)}\right)$$
+
 （6）同时，对于变异算子标准差需要做出如下规定，当变异算子标准差大于W/4时，W为搜索空间，做如下改变：
 $$\sigma_i^{(k)}=\left|W / 4-\sigma_i^{(k)}\right| $$
 
@@ -41,15 +44,26 @@ $$\sigma_i^{(k)}=\left|W / 4-\sigma_i^{(k)}\right| $$
 （9）粒子群进化，搜索最优
 ## 结果测试
 - Tablet函数
+
 ![Tablet0.png](../imgs/Tablet0.png)
+
 - Quadric函数
 ![Quadric0.png](../imgs/Quadric0.png)
+
 - Rosenbrock函数
+
 ![Rosenbrock0.png](../imgs/Rosenbrock0.png)
+
 - Griewank函数
+
 ![Griewank0.png](../imgs/Griewank0.png)
+
 - Rastrigin函数
+
 ![Rastrigin0.png](../imgs/Rastrigin0.png)
+
 - SchafferF7函数 
+
 ![SchafferF70.png](../imgs/SchafferF70.png)
+
 > 如有谬误，敬请指正！
